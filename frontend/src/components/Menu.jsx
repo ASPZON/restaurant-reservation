@@ -1,6 +1,7 @@
 import React from 'react'
 import data from "../restApi.json";
 const Menu = () => {
+  const dishes = data?.data?.[0]?.dishes || [];
   return (
     <>
       <section className='menu' id='menu'>
