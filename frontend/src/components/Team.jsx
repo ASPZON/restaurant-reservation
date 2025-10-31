@@ -2,6 +2,7 @@ import React from "react";
 import data from "../restApi.json";
 
 const Team = () => {
+  const team = data?.data?.[0]?.team || [];
   return (
     <section className="team" id="team">
       <div className="container">
